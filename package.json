@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "My CV in different distributions",
+  "author": "Jorge Ramírez Serrato",
+  "type": "module",
+  "main": "src/main.tsx",
+  "bin": {
+    "cv": "./src/main.tsx"
+  },
+  "scripts": {
+    "dev": "bun --watch src/main.tsx",
+    "start": "bun src/main.tsx",
+    "install-global": "bun link"
+  },
+  "dependencies": {
+    "ink": "^6.1.1",
+    "react": "^19.1.1",
+    "react-router": "^7.8.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.4",
+    "@types/bun": "latest",
+    "@types/react": "^19.1.10"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "license": "MIT"
+}
