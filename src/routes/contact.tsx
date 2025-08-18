@@ -7,6 +7,7 @@ export const Contact = () => {
       <Text bold color="blue">
         Where to else find me
       </Text>
+      <Text dimColor>Feel free to reach out!</Text>
       <Newline />
       <Box flexDirection="column">
         <Box flexDirection="column" marginBottom={1}>

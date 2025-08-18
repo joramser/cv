@@ -26,6 +26,7 @@ export const Experience = () => {
         <Text bold color="green">
           Experience
         </Text>
+        <Text dimColor>The journey through the years</Text>
         <Newline />
         {data.experience.map((experience, index) => (
           <Box

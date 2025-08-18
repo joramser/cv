@@ -116,7 +116,7 @@ At first, I was dedicated to migrating a legacy desktop application to a web app
       "Event-driven architecture",
     ],
     Languages: ["TypeScript", "JavaScript", "SQL", "C#", "Elixir"],
-    Frontend: ["React", "Next.js", "CSS", "Tailwind"],
+    Frontend: ["React", "Next.js", "Web APIs", "WebRTC", "CSS", "Tailwind"],
     Backend: ["Node.js", "Express", "Nest.js", "PostgreSQL", "MongoDB", "Redis", "RabbitMQ"],
     DevOps: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform"],
     Other: ["Productivity", "Mentoring"],
