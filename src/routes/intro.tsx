@@ -1,3 +1,4 @@
+import { Markdown } from "@cv/components/markdown";
 import { data } from "@cv/data";
 import { Box, Newline, Text, useInput } from "ink";
 import Link from "ink-link";
@@ -26,16 +27,16 @@ export const Intro = () => {
     <Box flexDirection="column" padding={1} justifyContent="space-between" height="100%">
       <Box flexDirection="column">
         <Box>
-          <Text bold color="cyan">
+          <Text bold color="magenta">
             {data.name}
           </Text>
           <Text color="blue"> ({data.handle}) </Text>
           {visible && <Text backgroundColor="red"> </Text>}
         </Box>
         <Text color="green">{data.title}</Text>
-        <Text color="magenta">📍{data.contact.location}</Text>
+        <Text color="cyan">📍{data.contact.location}</Text>
         <Newline />
-        <Text>{data.shortIntro}</Text>
+        <Markdown>{data.shortIntro}</Markdown>
       </Box>
       <Box alignSelf="flex-end">
         <Text>

@@ -6,10 +6,10 @@ export const data = {
     "I'm a software engineer and lifelong code enthusiast with over a decade of experience turning ideas into reliable, scalable systems. I hold a BS in Systems/Informatics Engineering and have worked across the full stack—starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
     "I love crafting both front-end and back-end solutions, and I'm passionate about clean, maintainable architecture. Over the years, I've collaborated with teams of all shapes and sizes, both on-site and remote, and I thrive in environments where learning and improvement never stop. My goal is always to build software that lasts and grows gracefully.",
   shortIntro:
-    "Hey there! I am #Jorge#! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
+    "Hey there! I am `Jorge`! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
     "My recent focus has been working on developer-facing tools and integrations but I like to work on any domain where there is a challenge to tackle!\n\n" +
     "Besides programming my other interests are music, guitar, cooking, coffee and enjoying time with my family.\n\n" +
-    `TLDR; I enjoying building, collaborating and make things happen.`,
+    "`TLDR; I enjoying building, collaborating and make things happen!`",
   experience: [
     {
       title: "Senior Software Engineer",
@@ -19,7 +19,7 @@ export const data = {
       startYear: "2023",
       endYear: "2025",
       location: "Tallinn, Estonia",
-      description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. In this context, I primarily worked as a product engineer, helping to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.
+      description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. I helped to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.
 
 Key responsibilities in my role included:
 
@@ -45,6 +45,7 @@ My role involved:
 - Migrating the legacy web app and backend originally built with Aurelia and older Node.js code, to a modern stack using React and TypeScript on the front end and a new TypeScript-based backend.
 - Building and improving communication between our data-gathering layer (images, audio, video) and our AI processing layer.
 - Enhancing the end-user flow by introducing innovative features to improve usability, boost conversion rates, and help the product stand out from the competition.
+- Port relevant features to our public API to allow clients to build their own flows.
 - Making architectural decisions and driving improvements across the stack to ensure high availability and scalability.`,
       tools: `Typescript, React, XState, CSS-in-JS, WebRTC, Video and Audio capturing browser APIs, automated UI tests, Node.js, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, CircleCI, A/B test and analytics management.`,
     },

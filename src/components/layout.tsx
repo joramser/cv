@@ -11,8 +11,11 @@ const routes = [
   { route: "/contact", label: "Contact", icon: "📧" },
 ] as const;
 
-const SIDEBAR_WIDTH = 25;
-const CONTENT_WIDTH = 80;
+const SIDEBAR_WIDTH = 24;
+const CONTENT_WIDTH = 82;
+
+const SSH_USER = process.env.SSH_USER || "user";
+const SSH_HOST = process.env.SSH_HOST || "cv.jorge.rs";
 
 export const Layout = () => {
   const [columns] = useStdoutDimensions();
@@ -37,7 +40,10 @@ export const Layout = () => {
 
   return (
     <Box flexDirection="column" height="100%" width="100%">
-      <Text>{`> user@cv.jorge.rs`}</Text>
+      <Box>
+        <Text bold>{"> "}</Text>
+        <Text color="magenta">{`${SSH_USER}@${SSH_HOST}`}</Text>
+      </Box>
       <Box flexDirection="row" height={28}>
         {showSidebar && (
           <Box
@@ -47,13 +53,7 @@ export const Layout = () => {
             borderColor="gray"
             justifyContent="space-between"
           >
-            <Box flexDirection="column">
-              <Box justifyContent="center" borderStyle="single" borderColor="cyan" marginBottom={1}>
-                <Text bold color="cyan">
-                  ~/cv.jorge.rs
-                </Text>
-              </Box>
-
+            <Box flexDirection="column" paddingX={1}>
               {routes.map((tab, index) => {
                 const isActive = location.pathname === tab.route;
 

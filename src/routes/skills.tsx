@@ -10,7 +10,7 @@ export const Skills = () => (
     <Newline />
     {Object.entries(data.skills).map(([category, skills]) => (
       <Box key={category} flexDirection="column" marginBottom={1}>
-        <Text bold color="cyan">
+        <Text bold color="magenta">
           {category}
         </Text>
         <Box marginLeft={2}>

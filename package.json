@@ -16,13 +16,17 @@
   "dependencies": {
     "ink": "^6.1.1",
     "ink-link": "^4.1.0",
+    "marked": "15",
+    "marked-terminal": "^7.3.0",
     "open": "^10.2.0",
     "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-router": "^7.8.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.4",
     "@types/bun": "latest",
+    "@types/marked-terminal": "^6.1.1",
     "@types/react": "^19.1.10"
   },
   "engines": {

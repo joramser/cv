@@ -39,11 +39,11 @@ export const Experience = () => {
             backgroundColor={selectedIndex === index ? "gray" : "transparent"}
           >
             <Box>
-              <Text color="cyanBright" bold>
+              <Text color="magentaBright" bold>
                 {experience.title}
               </Text>
               <Text> at</Text>
-              <Text color="magenta" bold>
+              <Text color="cyan" bold>
                 {" "}
                 {experience.company}
               </Text>
