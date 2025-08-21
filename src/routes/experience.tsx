@@ -1,16 +1,19 @@
 import { data } from "@cv/data";
 import { Box, Newline, Text, useInput } from "ink";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useSearchParams } from "react-router";
 
 export const Experience = () => {
-  const [selectedIndex, setSelectedIndex] = useState<number>(-1);
+  const [searchParams] = useSearchParams();
+  const from = searchParams.get("from");
+
+  const [selectedIndex, setSelectedIndex] = useState<number>(from ? parseInt(from, 10) : -1);
   const navigate = useNavigate();
 
   useInput((input, key) => {
     const experience = data.experience[selectedIndex];
     if (key.return && !!experience) {
-      navigate(`/experience/${experience.title};${experience.company}`);
+      navigate(`/experience/${selectedIndex}`);
     } else if (input === "j" || key.downArrow) {
       setSelectedIndex((prev) =>
         prev === null ? 0 : Math.min(prev + 1, data.experience.length - 1),

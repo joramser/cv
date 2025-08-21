@@ -4,18 +4,14 @@ import { useNavigate, useParams } from "react-router";
 
 export const ExperienceDetail = () => {
   const { id } = useParams<{ id: string }>();
+
   const navigate = useNavigate();
 
-  const experience = data.experience.find((experience) => {
-    const [title, company] = id?.split(";") ?? [];
-    if (!title || !company) return false;
-
-    return experience.title === title && experience.company === company;
-  });
+  const experience = data.experience[id ? parseInt(id, 10) : -1];
 
   useInput((input) => {
     if (input === "b") {
-      navigate("/experience");
+      navigate(`/experience?from=${id}`);
     }
   });
 
