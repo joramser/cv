@@ -36,38 +36,46 @@ export const Layout = () => {
   const showSidebar = (columns ?? 0) >= SIDEBAR_WIDTH + CONTENT_WIDTH;
 
   return (
-    <Box
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      height="100%"
-      width="100%"
-    >
+    <Box flexDirection="column" height="100%" width="100%">
+      <Text>{`> user@cv.jorge.rs`}</Text>
       <Box flexDirection="row" height={28}>
         {showSidebar && (
-          <Box flexDirection="column" width={SIDEBAR_WIDTH} borderStyle="single" borderColor="gray">
-            <Box justifyContent="center" borderStyle="single" borderColor="cyan" marginBottom={1}>
-              <Text bold color="cyan">
-                ~/cv.jorge.rs
-              </Text>
+          <Box
+            flexDirection="column"
+            width={SIDEBAR_WIDTH}
+            borderStyle="single"
+            borderColor="gray"
+            justifyContent="space-between"
+          >
+            <Box flexDirection="column">
+              <Box justifyContent="center" borderStyle="single" borderColor="cyan" marginBottom={1}>
+                <Text bold color="cyan">
+                  ~/cv.jorge.rs
+                </Text>
+              </Box>
+
+              {routes.map((tab, index) => {
+                const isActive = location.pathname === tab.route;
+
+                return (
+                  <Box
+                    key={tab.route}
+                    backgroundColor={isActive ? "gray" : "transparent"}
+                    paddingX={1}
+                  >
+                    <Text color={isActive ? "cyan" : "white"}>
+                      {tab.icon} {tab.label}
+                    </Text>
+                    <Text dimColor> ({index + 1})</Text>
+                  </Box>
+                );
+              })}
             </Box>
 
-            {routes.map((tab, index) => {
-              const isActive = location.pathname === tab.route;
-
-              return (
-                <Box
-                  key={tab.route}
-                  backgroundColor={isActive ? "gray" : "transparent"}
-                  paddingX={1}
-                >
-                  <Text color={isActive ? "cyan" : "white"}>
-                    {tab.icon} {tab.label}
-                  </Text>
-                  <Text dimColor> ({index + 1})</Text>
-                </Box>
-              );
-            })}
+            <Box justifyContent="center">
+              <Text>q</Text>
+              <Text dimColor> Quit</Text>
+            </Box>
           </Box>
         )}
 

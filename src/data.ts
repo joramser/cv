@@ -1,93 +1,96 @@
 export const data = {
   name: "Jorge Ramírez Serrato",
   handle: "joramser",
-  title: "Senior Software Engineer",
+  title: "Senior Software Engineer transforming ideas into reality",
   intro:
     "I'm a software engineer and lifelong code enthusiast with over a decade of experience turning ideas into reliable, scalable systems. I hold a BS in Systems/Informatics Engineering and have worked across the full stack—starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
     "I love crafting both front-end and back-end solutions, and I'm passionate about clean, maintainable architecture. Over the years, I've collaborated with teams of all shapes and sizes, both on-site and remote, and I thrive in environments where learning and improvement never stop. My goal is always to build software that lasts and grows gracefully.",
   shortIntro:
-    "I'm a software engineer with 10+ years of experience building scalable, maintainable systems from front to back. BS in Systems/Informatics Engineering.\n\n" +
-    "I've worked across a range of tools—from my early days in .NET to my current focus on modern Node.js and TypeScript. I thrive in collaborative, fast-learning environments and love crafting clean, lasting solutions that stand the test of time.\n\n" +
-    "Overall I just enjoying building things that I am proud of and that help others do their best work.",
+    "Hey there! I am #Jorge#! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
+    "My recent focus has been working on developer-facing tools and integrations but I like to work on any domain where there is a challenge to tackle!\n\n" +
+    "Besides programming my other interests are music, guitar, cooking, coffee and enjoying time with my family.\n\n" +
+    `TLDR; I enjoying building, collaborating and make things happen.`,
   experience: [
     {
       title: "Senior Software Engineer",
       company: "Ready Player Me",
+      companySummary: "Estonian startup building a cross-game avatar platform",
+      website: "https://readyplayer.me",
       startYear: "2023",
       endYear: "2025",
       location: "Tallinn, Estonia",
-      description: `I worked as a Senior Software Engineer at Ready Player Me, an Estonia-based startup offering a cross-game avatar platform.
-
-As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. In this context, I primarily worked as a product engineer, helping to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.
+      description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. In this context, I primarily worked as a product engineer, helping to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.
 
 Key responsibilities in my role included:
 
-- Developing a monetization platform to help companies sell and manage their in-game assets.
 - Building new features and improving our Avatar SDK for web, as well as enhancing the developer back office for easier integration.
 - Maintaining and creating new features in our public API for developers.
+- Developing a monetization storefront to help companies sell and manage their in-game assets.
 - Contributing to the launch of the Ready Player Me gaming platform experiment.
-- Implementing and launching PlayerZero, an avatar collectible platform, and continuously adding social features and a rewards system to drive user engagement.
-
-Working with a stack and tools like: Typescript, React, NestJS, Next.js, Three.js, Tailwind, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, A/B test and analytics management.`,
+- Implementing and launching PlayerZero, an avatar collectible platform, and continuously adding social features and a rewards system to drive user engagement.`,
+      tools: `Typescript, React, NestJS, Next.js, Three.js, Tailwind, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, A/B test and analytics management.`,
     },
     {
       title: "Senior Full-Stack Engineer",
       company: "Veriff",
+      companySummary: "Estonian startup focused on Identity Verification",
+      website: "https://veriff.com",
       startYear: "2019",
       endYear: "2023",
       location: "Tallinn, Estonia",
-      description: `I worked as a Senior Full-stack Developer at Veriff, an Estonian startup focused on identity verification.
-
-I was part of the End-User App team, responsible for capturing photos and videos, providing real-time feedback to users, and integrating with client web flows via our SDK.
+      description: `I was part of the End-User Platform team, responsible for capturing photos and videos, providing real-time feedback to users, and integrating with client web flows via our SDK.
 
 My role involved:
 
 - Migrating the legacy web app and backend originally built with Aurelia and older Node.js code, to a modern stack using React and TypeScript on the front end and a new TypeScript-based backend.
 - Building and improving communication between our data-gathering layer (images, audio, video) and our AI processing layer.
 - Enhancing the end-user flow by introducing innovative features to improve usability, boost conversion rates, and help the product stand out from the competition.
-- Making architectural decisions and driving improvements across the stack to ensure high availability and scalability.
-
-Working with a stack and tools like: Typescript, React, XState, CSS-in-JS, WebRTC, Video and Audio capturing browser APIs, automated UI tests, Node.js, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, CircleCI, A/B test and analytics management.`,
+- Making architectural decisions and driving improvements across the stack to ensure high availability and scalability.`,
+      tools: `Typescript, React, XState, CSS-in-JS, WebRTC, Video and Audio capturing browser APIs, automated UI tests, Node.js, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, CircleCI, A/B test and analytics management.`,
     },
     {
       title: "Full-Stack Engineer",
       company: "Jobbatical",
+      companySummary: "Estonian startup centered on on global talent mobility",
+      website: "https://jobbatical.com",
       startYear: "2017",
       endYear: "2019",
       location: "Tallinn, Estonia",
-      description: `I worked as a Full-stack Developer at Jobbatical, an Estonia-based startup.
-
-My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance. Over time, my focus shifted toward internal architecture and core system improvements, including the implementation of an event-based architecture and breaking down the original monolith into microservices.
-
-Working with a stack and tools like: React w/o Redux, CSS and preprocessors, Storybook, Next.js, Node.js, CircleCI, PostgreSQL, Jest, Docker, Kubernetes, RabbitMQ.`,
+      description: `My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance.
+      
+Over time, my focus shifted toward internal architecture and core system improvements, including the implementation of an event-based architecture and breaking down the original monolith into microservices.`,
+      tools:
+        "React, Redux, SASS, Storybook, Next.js, Node.js, CircleCI, PostgreSQL, Jest, Docker, Kubernetes, RabbitMQ.",
     },
     {
       title: "Technical Lead",
       company: "Evercheck",
+      companySummary: "U.S.-based company focused on healthcare providers license verification",
+      website: "https://evercheck.com",
       startYear: "2016",
       endYear: "2017",
       location: "Cartagena, Colombia",
       description: `I was promoted to Technical Lead, overseeing a small team responsible for developing new products for the company. I led work on two key projects: EverCheck Wallet and EverCheck Education. Both designed to integrate with the main EverCheck HR suite.
 
-In this role, I continued implementing microservices (e.g., storage, authentication, data) and was actively involved in making and executing design and architecture decisions critical to the success and scalability of these products.
-
-Worked with stack based on, but not only, NodeJS, React + Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3 etc.`,
+In this role, I continued implementing microservices (e.g., storage, authentication, data) and was actively involved in making and executing design and architecture decisions critical to the success and scalability of these products.`,
+      tools: `NodeJS, React, Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3`,
     },
     {
       title: "Full-Stack Engineer",
       company: "Evercheck",
+      companySummary: "U.S.-based company focused on healthcare providers license verification",
+      website: "https://evercheck.com",
       startYear: "2013",
       endYear: "2016",
       location: "Cartagena, Colombia",
-      description: `I worked as a Software Engineer at EverCheck, a U.S.-based company (through ISF de Colombia).
-
-I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform: such as migrating from a monolithic web service to a microservices-based architecture, which helped the product scale to support 5x its original user base. I also contributed to major UI improvements, including a full product redesign and the development of a custom React component library.
-
-Worked with stack based on, but not only, NodeJS, React + Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3 etc.`,
+      description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform: such as migrating from a monolithic web service to a microservices-based architecture, which helped the product scale to support 5x its original user base. I also contributed to major UI improvements, including a full product redesign and the development of a custom React component library.`,
+      tools:
+        "NodeJS, React + Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3",
     },
     {
       title: "Junior Software Engineer",
       company: "Zeus Tecnología",
+      companySummary: "Colombian company providing hospitality software",
       startYear: "2012",
       endYear: "2013",
       location: "Cartagena, Colombia",
@@ -125,7 +128,8 @@ At first, I was dedicated to migrating a legacy desktop application to a web app
   contact: {
     website: "https://jorge.rs",
     github: "https://github.com/joramser",
-    linkedin: "https://linkedin.com/joramser",
+    linkedin: "https://linkedin.com/in/joramser",
+    twitter: "https://twitter.com/joramser",
     location: "Tallinn, EE",
   },
 };

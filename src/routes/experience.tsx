@@ -40,8 +40,9 @@ export const Experience = () => {
           >
             <Box>
               <Text color="cyanBright" bold>
-                {experience.title} at
+                {experience.title}
               </Text>
+              <Text> at</Text>
               <Text color="magenta" bold>
                 {" "}
                 {experience.company}
