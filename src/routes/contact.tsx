@@ -1,4 +1,5 @@
 import { data } from "@cv/data";
+import { isSSH } from "@cv/utils";
 import { Box, Newline, Text, useInput } from "ink";
 import Link from "ink-link";
 import open from "open";
@@ -13,7 +14,8 @@ const ContactItem = (props: { label: string; hotkey: string; url: string }) => {
   return (
     <Box flexDirection="column" marginBottom={1}>
       <Text>
-        {props.label} <Text dimColor>({props.hotkey})</Text>
+        {props.label}
+        {!isSSH && <Text dimColor> ({props.hotkey})</Text>}
         {":"}
       </Text>
       <Text color="green">

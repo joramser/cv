@@ -1,4 +1,5 @@
 import { data } from "@cv/data";
+import { isSSH } from "@cv/utils";
 import { Box, Text, useInput } from "ink";
 import open from "open";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router";
@@ -54,7 +55,7 @@ export const ExperienceDetail = () => {
         borderColor="gray"
         justifyContent="space-around"
       >
-        {experience.website && (
+        {experience.website && !isSSH && (
           <Box>
             <Text>o</Text>
             <Text dimColor> Open website</Text>

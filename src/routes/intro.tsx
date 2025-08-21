@@ -1,5 +1,6 @@
 import { Markdown } from "@cv/components/markdown";
 import { data } from "@cv/data";
+import { isSSH } from "@cv/utils";
 import { Box, Newline, Text, useInput } from "ink";
 import Link from "ink-link";
 import open from "open";
@@ -43,8 +44,9 @@ export const Intro = () => {
           More about me at{" "}
           <Text color="blue">
             <Link url={ABOUT_URL} fallback={false}>
-              jorge.rs/about (o)
+              jorge.rs/about
             </Link>
+            {!isSSH && <Text> (o)</Text>}
           </Text>
         </Text>
       </Box>
