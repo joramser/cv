@@ -1,18 +1,25 @@
 import { data } from "@cv/data";
 import { Box, Text, useInput } from "ink";
 import open from "open";
-import { useNavigate, useParams } from "react-router";
+import { Outlet, useLocation, useNavigate, useParams } from "react-router";
 
 export const ExperienceDetail = () => {
   const { id } = useParams<{ id: string }>();
-
+  const location = useLocation();
   const navigate = useNavigate();
 
   const experience = data.experience[id ? parseInt(id, 10) : -1];
+  const isDisplayingTools = location.pathname.endsWith("/tools");
 
   useInput((input) => {
     if (input === "o" && experience?.website) {
       open(experience.website);
+    } else if (input === "t") {
+      if (isDisplayingTools) {
+        navigate(`/experience/${id}`);
+      } else {
+        navigate(`/experience/${id}/tools`);
+      }
     } else if (input === "b") {
       navigate(`/experience?from=${id}`);
     }
@@ -33,9 +40,12 @@ export const ExperienceDetail = () => {
           {experience?.title} at {experience?.company}
         </Text>
         <Text dimColor>{experience.companySummary}</Text>
-        <Box marginTop={1}>
-          <Text>{experience.description}</Text>
-        </Box>
+        {!isDisplayingTools && (
+          <Box marginTop={1}>
+            <Text>{experience.description}</Text>
+          </Box>
+        )}
+        <Outlet />
       </Box>
       <Box
         width="100%"
@@ -48,6 +58,12 @@ export const ExperienceDetail = () => {
           <Box>
             <Text>o</Text>
             <Text dimColor> Open website</Text>
+          </Box>
+        )}
+        {experience.tools && (
+          <Box>
+            <Text>t</Text>
+            <Text dimColor> Toggle Stack</Text>
           </Box>
         )}
         <Box>

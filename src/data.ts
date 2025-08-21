@@ -7,7 +7,8 @@ export const data = {
     "I love crafting both front-end and back-end solutions, and I'm passionate about clean, maintainable architecture. Over the years, I've collaborated with teams of all shapes and sizes, both on-site and remote, and I thrive in environments where learning and improvement never stop. My goal is always to build software that lasts and grows gracefully.",
   shortIntro:
     "Hey there! I am `Jorge`! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
-    "My recent focus has been working on developer-facing tools and integrations but I like to work on any domain where there is a challenge to tackle!\n\n" +
+    "My recent focus has been working on developer-facing tools and integrations but I enjoy working on any domain where there is a cool challenge to tackle!\n\n" +
+    "I love collaboration and I thrive in tight-knit teams focusing on solving problems for end-users.\n\n" +
     "Besides programming my other interests are music, guitar, cooking, coffee and enjoying time with my family.\n\n" +
     "`TLDR; I enjoying building, collaborating and make things happen!`",
   experience: [
@@ -28,7 +29,20 @@ Key responsibilities in my role included:
 - Developing a monetization storefront to help companies sell and manage their in-game assets.
 - Contributing to the launch of the Ready Player Me gaming platform experiment.
 - Implementing and launching PlayerZero, an avatar collectible platform, and continuously adding social features and a rewards system to drive user engagement.`,
-      tools: `Typescript, React, NestJS, Next.js, Three.js, Tailwind, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, A/B test and analytics management.`,
+      tools: [
+        "Typescript",
+        "React",
+        "NestJS",
+        "Next.js",
+        "Three.js",
+        "Tailwind",
+        "PostgreSQL",
+        "AWS",
+        "RabbitMQ",
+        "Docker",
+        "Kubernetes",
+        "A/B test and analytics management",
+      ],
     },
     {
       title: "Senior Full-Stack Engineer",
@@ -47,7 +61,23 @@ My role involved:
 - Enhancing the end-user flow by introducing innovative features to improve usability, boost conversion rates, and help the product stand out from the competition.
 - Port relevant features to our public API to allow clients to build their own flows.
 - Making architectural decisions and driving improvements across the stack to ensure high availability and scalability.`,
-      tools: `Typescript, React, XState, CSS-in-JS, WebRTC, Video and Audio capturing browser APIs, automated UI tests, Node.js, PostgreSQL, AWS, RabbitMQ, Docker, Kubernetes, CircleCI, A/B test and analytics management.`,
+      tools: [
+        "Typescript",
+        "React",
+        "XState",
+        "CSS-in-JS",
+        "WebRTC",
+        "Video and Audio capturing browser APIs",
+        "Automated UI tests",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "RabbitMQ",
+        "Docker",
+        "Kubernetes",
+        "CircleCI",
+        "A/B test and analytics management",
+      ],
     },
     {
       title: "Full-Stack Engineer",
@@ -60,8 +90,20 @@ My role involved:
       description: `My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance.
       
 Over time, my focus shifted toward internal architecture and core system improvements, including the implementation of an event-based architecture and breaking down the original monolith into microservices.`,
-      tools:
-        "React, Redux, SASS, Storybook, Next.js, Node.js, CircleCI, PostgreSQL, Jest, Docker, Kubernetes, RabbitMQ.",
+      tools: [
+        "React",
+        "Redux",
+        "SASS",
+        "Storybook",
+        "Next.js",
+        "Node.js",
+        "CircleCI",
+        "PostgreSQL",
+        "Jest",
+        "Docker",
+        "Kubernetes",
+        "RabbitMQ",
+      ],
     },
     {
       title: "Technical Lead",
@@ -74,7 +116,20 @@ Over time, my focus shifted toward internal architecture and core system improve
       description: `I was promoted to Technical Lead, overseeing a small team responsible for developing new products for the company. I led work on two key projects: EverCheck Wallet and EverCheck Education. Both designed to integrate with the main EverCheck HR suite.
 
 In this role, I continued implementing microservices (e.g., storage, authentication, data) and was actively involved in making and executing design and architecture decisions critical to the success and scalability of these products.`,
-      tools: `NodeJS, React, Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3`,
+      tools: [
+        "Node.js",
+        "React",
+        "Redux",
+        "Mocha",
+        "Jest",
+        "Hapi",
+        "Oracle",
+        "MySQL",
+        "RethinkDB",
+        "Redis",
+        "Amazon SQS",
+        "Amazon S3",
+      ],
     },
     {
       title: "Full-Stack Engineer",
@@ -84,9 +139,23 @@ In this role, I continued implementing microservices (e.g., storage, authenticat
       startYear: "2013",
       endYear: "2016",
       location: "Cartagena, Colombia",
-      description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform: such as migrating from a monolithic web service to a microservices-based architecture, which helped the product scale to support 5x its original user base. I also contributed to major UI improvements, including a full product redesign and the development of a custom React component library.`,
-      tools:
-        "NodeJS, React + Redux, Mocha, Jest, Hapi, Oracle, MySQL, RethinkDB, Redis, Amazon SQS, Amazon S3",
+      description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform: such as migrating from a monolithic web service to a microservices-based architecture, which helped the product scale to support 5x its original user base.
+      
+I also contributed to major UI improvements, including a full product redesign and the development of a custom React component library.`,
+      tools: [
+        "Node.js",
+        "React",
+        "Redux",
+        "Mocha",
+        "Jest",
+        "Hapi",
+        "Oracle",
+        "MySQL",
+        "RethinkDB",
+        "Redis",
+        "Amazon SQS",
+        "Amazon S3",
+      ],
     },
     {
       title: "Junior Software Engineer",

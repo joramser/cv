@@ -42,7 +42,9 @@ export const Layout = () => {
     <Box flexDirection="column" height="100%" width="100%">
       <Box>
         <Text bold>{"> "}</Text>
-        <Text color="magenta">{`${SSH_USER}@${SSH_HOST}`}</Text>
+        <Text color="cyan">{SSH_USER}</Text>
+        <Text>@</Text>
+        <Text color="magenta">{SSH_HOST}</Text>
       </Box>
       <Box flexDirection="row" height={28}>
         {showSidebar && (
@@ -53,7 +55,7 @@ export const Layout = () => {
             borderColor="gray"
             justifyContent="space-between"
           >
-            <Box flexDirection="column" paddingX={1}>
+            <Box flexDirection="column" paddingX={1} gap={1}>
               {routes.map((tab, index) => {
                 const isActive = location.pathname === tab.route;
 
