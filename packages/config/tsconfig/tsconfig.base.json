@@ -1,4 +1,6 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Strictest",
   "compilerOptions": {
     "strict": true,
     "strictNullChecks": true,
@@ -12,25 +14,35 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": [
-      "ESNext"
-    ],
+
+    "lib": ["ESNext"],
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
     "resolveJsonModule": true,
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
     "incremental": true,
     "isolatedModules": true,
-    "tsBuildInfoFile": "${configDir}/tsconfig.tsbuildinfo",
-    "baseUrl": "${configDir}",
-        "paths": {
-      "@cv/*": ["src/*"]
-    }
 
-  }
+    "tsBuildInfoFile": "${configDir}/tsconfig.tsbuildinfo",
+    "baseUrl": "${configDir}"
+  },
+  "include": [
+    "${configDir}/**/*.ts",
+    "${configDir}/**/*.tsx",
+    "${configDir}/**/*.cts",
+    "${configDir}/**/*.ctsx",
+    "${configDir}/**/*.mts",
+    "${configDir}/**/*.mtsx",
+    "${configDir}/**/*.js",
+    "${configDir}/**/*.jsx",
+    "${configDir}/**/*.cjs",
+    "${configDir}/**/*.cjsx",
+    "${configDir}/**/*.mjs",
+    "${configDir}/**/*.mjsx"
+  ],
+  "exclude": ["${configDir}/node_modules", "${configDir}/dist"]
 }

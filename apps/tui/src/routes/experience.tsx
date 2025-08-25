@@ -1,4 +1,4 @@
-import { data } from "@cv/data";
+import { data } from "@tui/data";
 import { Box, Newline, Text, useInput } from "ink";
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";

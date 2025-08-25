@@ -1,5 +1,5 @@
-import { data } from "@cv/data";
-import { isSSH } from "@cv/utils";
+import { data } from "@tui/data";
+import { isSSH } from "@tui/utils";
 import { Box, Newline, Text, useInput } from "ink";
 import Link from "ink-link";
 import open from "open";

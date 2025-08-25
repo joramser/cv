@@ -1,4 +1,4 @@
-import { useStdoutDimensions } from "@cv/hooks/use-stdout-dimensions";
+import { useStdoutDimensions } from "@tui/hooks/use-stdout-dimensions";
 import { Box, Text, useInput } from "ink";
 
 import { Outlet, useLocation, useNavigate } from "react-router";

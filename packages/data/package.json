@@ -1,0 +1,6 @@
+{
+  "name": "@cv/data",
+  "module": "index.ts",
+  "type": "module",
+  "author": "Jorge Ramírez Serrato"
+}

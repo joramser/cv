@@ -32,12 +32,5 @@ yarn-error.log*
 # turbo
 .turbo
 
-# Tanstack
-.tanstack
-
 # Dev files
 notes.md
-processes.json*
-
-# TODO: Temporarily ignore UI package
-packages/ui

@@ -1,4 +1,4 @@
-import { data } from "@cv/data";
+import { data } from "@tui/data";
 import { Box, Newline, Text } from "ink";
 
 export const Projects = () => (

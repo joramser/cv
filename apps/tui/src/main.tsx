@@ -1,12 +1,12 @@
 #!/usr/bin/env bun
-import { Layout } from "@cv/components/layout";
-import { Contact } from "@cv/routes/contact";
-import { Experience } from "@cv/routes/experience";
-import { ExperienceDetail } from "@cv/routes/experience/experience-detail";
-import { Intro } from "@cv/routes/intro";
-// import { Projects } from "@cv/routes/projects";
-import { Skills } from "@cv/routes/skills";
-import { Splash } from "@cv/routes/splash";
+import { Layout } from "@tui/components/layout";
+import { Contact } from "@tui/routes/contact";
+import { Experience } from "@tui/routes/experience";
+import { ExperienceDetail } from "@tui/routes/experience/experience-detail";
+import { Intro } from "@tui/routes/intro";
+// import { Projects } from "@tui/routes/projects";
+import { Skills } from "@tui/routes/skills";
+import { Splash } from "@tui/routes/splash";
 import { render } from "ink";
 import { MemoryRouter, Route, Routes } from "react-router";
 import { ExperienceDetailTools } from "./routes/experience/experience-tools";

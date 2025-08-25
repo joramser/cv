@@ -1,5 +1,5 @@
-import { data } from "@cv/data";
-import { isSSH } from "@cv/utils";
+import { data } from "@tui/data";
+import { isSSH } from "@tui/utils";
 import { Box, Text, useInput } from "ink";
 import open from "open";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router";

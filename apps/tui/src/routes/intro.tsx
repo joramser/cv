@@ -1,6 +1,6 @@
-import { Markdown } from "@cv/components/markdown";
-import { data } from "@cv/data";
-import { isSSH } from "@cv/utils";
+import { Markdown } from "@tui/components/markdown";
+import { data } from "@tui/data";
+import { isSSH } from "@tui/utils";
 import { Box, Newline, Text, useInput } from "ink";
 import Link from "ink-link";
 import open from "open";
