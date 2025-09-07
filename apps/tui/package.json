@@ -14,6 +14,7 @@
     "install-global": "bun link"
   },
   "dependencies": {
+    "@cv/data": "workspace:^",
     "ink": "^6.1.1",
     "ink-link": "^4.1.0",
     "marked": "15",

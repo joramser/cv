@@ -17,6 +17,7 @@
         "cv": "./src/main.tsx",
       },
       "dependencies": {
+        "@cv/data": "workspace:^",
         "ink": "^6.1.1",
         "ink-link": "^4.1.0",
         "marked": "15",
@@ -36,6 +37,7 @@
       "version": "1.0.0",
       "dependencies": {
         "@astrojs/mdx": "^4.3.4",
+        "@cv/data": "workspace:^",
         "@lucide/astro": "^0.541.0",
         "@tailwindcss/vite": "^4.1.12",
         "astro": "^5.13.3",

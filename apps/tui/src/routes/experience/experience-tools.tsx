@@ -1,4 +1,4 @@
-import { data } from "@tui/data";
+import { data } from "@cv/data";
 import { Box, Text } from "ink";
 import { useParams } from "react-router";
 

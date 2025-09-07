@@ -1,4 +1,4 @@
-import { data } from "@tui/data";
+import { data } from "@cv/data";
 import { isSSH } from "@tui/utils";
 import { Box, Text, useInput } from "ink";
 import open from "open";
