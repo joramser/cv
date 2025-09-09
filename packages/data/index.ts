@@ -172,10 +172,16 @@ At first, I was dedicated to migrating a legacy desktop application to a web app
 
   projects: [
     {
+      name: "Tallin Transport Raycast Extension",
+      description: "Raycast extension to get public transport info for Tallinn, Estonia",
+      tech: ["TypeScript", "React", "Raycast API"],
+      url: "https://www.raycast.com/joramser/tallinn-transport",
+    },
+    {
       name: "Terminal CV",
       description: "Interactive terminal-based CV built with React Ink",
-      tech: "TypeScript, React Ink, Bun",
-      url: "github.com/joramser/cv",
+      tech: ["TypeScript", "React Ink", "Bun"],
+      url: "https://github.com/joramser/cv",
     },
   ],
 
@@ -189,10 +195,10 @@ At first, I was dedicated to migrating a legacy desktop application to a web app
       "Event-driven architecture",
     ],
     Languages: ["TypeScript", "JavaScript", "SQL", "C#", "Elixir"],
-    Frontend: ["React", "Next.js", "Web APIs", "WebRTC", "CSS", "Tailwind"],
+    Frontend: ["React", "Next.js", "Web APIs", "WebRTC", "CSS", "Tailwind", "Astro"],
     Backend: ["Node.js", "Express", "Nest.js", "PostgreSQL", "MongoDB", "Redis", "RabbitMQ"],
     DevOps: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform"],
-    Other: ["Productivity", "Mentoring"],
+    Other: ["Productivity tools", "Mentoring"],
   },
 
   contact: {

@@ -1,0 +1,53 @@
+---
+import { data } from "@cv/data";
+import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
+---
+
+<header class="flex flex-col gap-1">
+  <h1 class="font-mono font-bold text-2xl">
+    {data.name}
+  </h1>
+  <p class="text-gray-700">{data.title}</p>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-1 font-mono leading-none">
+      <AtSign size="14" />
+      <span>{data.handle}</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <a
+        href={data.contact.website}
+        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        target="_blank"
+      >
+        <Globe size="14" />
+      </a>
+      <a
+        href={data.contact.github}
+        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        target="_blank"
+      >
+        <Github size="14" />
+      </a>
+      <a
+        href={data.contact.linkedin}
+        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        target="_blank"
+      >
+        <Linkedin size="14" />
+      </a>
+      <a
+        href={data.contact.twitter}
+        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        target="_blank"
+      >
+        <img src="/x.svg" alt="x-icon" class="size-4" />
+      </a>
+    </div>
+  </div>
+  <div class="flex items-center gap-1">
+    <Pin size="14" />
+    <a class="hover:underline" href="https://www.google.com/maps/place/Tallinn/" target="_blank"
+      >{data.contact.location}</a
+    >
+  </div>
+</header>

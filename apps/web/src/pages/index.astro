@@ -1,39 +1,117 @@
 ---
 import "@web/styles/global.css";
 import { data } from "@cv/data";
-
-import { AtSign, Pin } from "@lucide/astro";
+import Header from "@web/components/header.astro";
+import Badge from "@web/components/ui/badge.astro";
 ---
 
 <html lang="en" class="light">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{data.name} - Resume</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{data.name} - Resume</title>
+  </head>
 
-	<body>
-		<main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16">
-			<header class="flex flex-col gap-1">
-				<h1 class="font-mono font-bold text-2xl">
-					{data.name}
-				</h1>
-				<p class="text-gray-700">{data.title}</p>
-				<div class="flex items-center gap-1 font-mono text-orange-400">
-					<AtSign size="14" />
-					<span>{data.handle}</span>
-				</div>
-				<div class="flex items-center gap-1">
-					<Pin size="14" />
-					<a class="hover:underline" href="https://www.google.com/maps/place/Tallinn/" target="_blank">{data.contact.location}</a>
-				</div>
-			</header>
+  <body>
+    <main
+      class="container relative mx-auto flex flex-col gap-8 max-w-4xl scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
+    >
+      <Header />
 
-			<div class="sr-only">
-				<h1>{data.name}&apos;s Resume</h1>
-			</div>
-		</main>
-	</body>
+      <section class="flex flex-col gap-4">
+        <a href="#intro">
+          <h2 class="font-mono font-bold text-xl">Intro</h2>
+        </a>
+        <p class="text-gray-700 whitespace-break-spaces">{data.intro}</p>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <a href="#experience">
+          <h2 class="font-mono font-bold text-xl">Experience</h2>
+        </a>
+
+        <div class="flex flex-col gap-4">
+          {
+            data.experience.slice(0, 4).map((item) => (
+              <div>
+                <div class="font-mono flex justify-between">
+                  <div>
+                    <a
+                      href={item.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover:underline"
+                    >
+                      <h3 class="font-bold text-lg">{item.company}</h3>
+                    </a>
+                    <p class="font-bold text-md text-gray-700">{item.title}</p>
+                  </div>
+                  <p class="text-gray-700">
+                    {item.startYear} - {item.endYear ?? "Present"}
+                  </p>
+                </div>
+                <p class="text-gray-700 mt-2 whitespace-break-spaces">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <a href="#skills">
+          <h2 class="font-mono font-bold text-xl">Skills</h2>
+        </a>
+        <div class="flex flex-col gap-2">
+          {
+            Object.entries(data.skills).map(([category, skills]) => (
+              <div class="flex gap-4">
+                <h3 class="w-22 shrink-0 font-mono font-bold text-gray-700">{category}</h3>
+                <div class="flex gap-2 flex-wrap">
+                  {skills.map((skill) => (
+                    <Badge>{skill}</Badge>
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-4">
+        <a href="#projects">
+          <h2 class="font-mono font-bold text-xl">Projects</h2>
+        </a>
+        <div class="flex flex-col gap-4">
+          {
+            data.projects.map((project) => (
+              <div>
+                <div class="flex gap-4 items-center">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:underline"
+                  >
+                    <h3 class="font-mono font-bold">{project.name}</h3>
+                  </a>
+									<div class="flex gap-2 flex-wrap">
+                  {project.tech.map((tech) => (
+                    <Badge>{tech}</Badge>
+                  ))}
+									</div>
+                </div>
+                <p class="text-gray-700 mt-2 whitespace-break-spaces">{project.description}</p>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <div class="sr-only">
+        <h1>{data.name}&apos;s Resume</h1>
+      </div>
+    </main>
+  </body>
 </html>
