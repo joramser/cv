@@ -7,14 +7,16 @@ export interface Props {
 const { href, class: className, ...props } = Astro.props;
 ---
 
-{href ? (
-  <a href={href}>
-    <h2 class:list={["font-mono font-bold text-xl", className]} {...props}>
+{
+  href ? (
+    <a href={href}>
+      <h2 class:list={["font-mono text-xl font-bold", className]} {...props}>
+        <slot />
+      </h2>
+    </a>
+  ) : (
+    <h2 class:list={["font-mono text-xl font-bold", className]} {...props}>
       <slot />
     </h2>
-  </a>
-) : (
-  <h2 class:list={["font-mono font-bold text-xl", className]} {...props}>
-    <slot />
-  </h2>
-)}
+  )
+}

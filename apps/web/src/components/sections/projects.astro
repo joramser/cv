@@ -12,22 +12,17 @@ import SectionTitle from "@web/components/ui/section-title.astro";
     {
       data.projects.map((project) => (
         <div>
-          <div class="flex gap-4 items-center">
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:underline"
-            >
+          <div class="flex items-center gap-4">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" class="hover:underline">
               <h3 class="font-mono font-bold">{project.name}</h3>
             </a>
-            <div class="flex gap-2 flex-wrap">
+            <div class="flex flex-wrap gap-2">
               {project.tech.map((tech) => (
                 <Badge>{tech}</Badge>
               ))}
             </div>
           </div>
-          <p class="text-gray-700 mt-2 whitespace-break-spaces">{project.description}</p>
+          <p class="mt-2 whitespace-break-spaces text-gray-700">{project.description}</p>
         </div>
       ))
     }

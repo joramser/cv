@@ -4,11 +4,11 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
 ---
 
 <header class="flex flex-col gap-1">
-  <h1 class="font-mono font-bold text-2xl">
+  <h1 class="font-mono text-2xl font-bold">
     {data.name}
   </h1>
   <p class="text-gray-700">{data.title}</p>
-  <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+  <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
     <div class="flex items-center gap-1 font-mono leading-none">
       <AtSign size="16" class="shrink-0" />
       <span class="break-all sm:break-normal">{data.handle}</span>
@@ -16,28 +16,28 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
     <div class="flex items-center gap-2">
       <a
         href={data.contact.website}
-        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
         target="_blank"
       >
         <Globe size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.github}
-        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
         target="_blank"
       >
         <Github size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.linkedin}
-        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
         target="_blank"
       >
         <Linkedin size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.twitter}
-        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
         target="_blank"
       >
         <img src="/x.svg" alt="x-icon" class="size-5 sm:size-4" />
@@ -45,9 +45,11 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
     </div>
   </div>
   <div class="flex items-center gap-1">
-    <Pin size="16" class="sm:size-4 shrink-0" />
-    <a class="hover:underline py-2 sm:py-0 -my-2 sm:my-0" href="https://www.google.com/maps/place/Tallinn/" target="_blank"
-      >{data.contact.location}</a
+    <Pin size="16" class="shrink-0 sm:size-4" />
+    <a
+      class="-my-2 py-2 hover:underline sm:my-0 sm:py-0"
+      href="https://www.google.com/maps/place/Tallinn/"
+      target="_blank">{data.contact.location}</a
     >
   </div>
 </header>

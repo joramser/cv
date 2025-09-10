@@ -14,7 +14,7 @@ layer(base);
     font-size: clamp(14px, 2.5vw, 16px);
     overscroll-behavior: none;
   }
-  
+
   body {
     line-height: 1.6;
   }
