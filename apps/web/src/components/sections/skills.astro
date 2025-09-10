@@ -1,0 +1,25 @@
+---
+import { data } from "@cv/data";
+import Badge from "@web/components/ui/badge.astro";
+import Section from "@web/components/ui/section.astro";
+import SectionBody from "@web/components/ui/section-body.astro";
+import SectionTitle from "@web/components/ui/section-title.astro";
+---
+
+<Section>
+  <SectionTitle href="#skills">Skills</SectionTitle>
+  <SectionBody>
+    {
+      Object.entries(data.skills).map(([category, skills]) => (
+        <div class="flex gap-4">
+          <h3 class="w-22 shrink-0 font-mono font-bold text-gray-700">{category}</h3>
+          <div class="flex gap-2 flex-wrap">
+            {skills.map((skill) => (
+              <Badge>{skill}</Badge>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </SectionBody>
+</Section>

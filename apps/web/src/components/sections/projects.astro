@@ -1,0 +1,35 @@
+---
+import { data } from "@cv/data";
+import Badge from "@web/components/ui/badge.astro";
+import Section from "@web/components/ui/section.astro";
+import SectionBody from "@web/components/ui/section-body.astro";
+import SectionTitle from "@web/components/ui/section-title.astro";
+---
+
+<Section>
+  <SectionTitle href="#projects">Projects</SectionTitle>
+  <SectionBody>
+    {
+      data.projects.map((project) => (
+        <div>
+          <div class="flex gap-4 items-center">
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+            >
+              <h3 class="font-mono font-bold">{project.name}</h3>
+            </a>
+            <div class="flex gap-2 flex-wrap">
+              {project.tech.map((tech) => (
+                <Badge>{tech}</Badge>
+              ))}
+            </div>
+          </div>
+          <p class="text-gray-700 mt-2 whitespace-break-spaces">{project.description}</p>
+        </div>
+      ))
+    }
+  </SectionBody>
+</Section>

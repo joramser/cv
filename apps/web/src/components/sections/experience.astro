@@ -1,0 +1,35 @@
+---
+import { data } from "@cv/data";
+import Section from "@web/components/ui/section.astro";
+import SectionBody from "@web/components/ui/section-body.astro";
+import SectionTitle from "@web/components/ui/section-title.astro";
+---
+
+<Section>
+  <SectionTitle href="#experience">Experience</SectionTitle>
+  <SectionBody>
+    {
+      data.experience.map((item) => (
+        <div>
+          <div class="font-mono flex justify-between">
+            <div>
+              <a
+                href={item.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+              >
+                <h3 class="font-bold text-lg">{item.company}</h3>
+              </a>
+              <p class="font-bold text-md text-gray-700">{item.title}</p>
+            </div>
+            <p class="text-gray-700">
+              {item.startYear} - {item.endYear ?? "Present"}
+            </p>
+          </div>
+          <p class="text-gray-700 mt-2 whitespace-break-spaces">{item.description}</p>
+        </div>
+      ))
+    }
+  </SectionBody>
+</Section>
