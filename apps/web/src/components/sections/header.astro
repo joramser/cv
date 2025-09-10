@@ -8,45 +8,45 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
     {data.name}
   </h1>
   <p class="text-gray-700">{data.title}</p>
-  <div class="flex items-center gap-4">
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
     <div class="flex items-center gap-1 font-mono leading-none">
-      <AtSign size="14" />
-      <span>{data.handle}</span>
+      <AtSign size="16" class="shrink-0" />
+      <span class="break-all sm:break-normal">{data.handle}</span>
     </div>
     <div class="flex items-center gap-2">
       <a
         href={data.contact.website}
-        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
         target="_blank"
       >
-        <Globe size="14" />
+        <Globe size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.github}
-        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
         target="_blank"
       >
-        <Github size="14" />
+        <Github size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.linkedin}
-        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
         target="_blank"
       >
-        <Linkedin size="14" />
+        <Linkedin size="16" class="sm:size-4" />
       </a>
       <a
         href={data.contact.twitter}
-        class="p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
+        class="p-2 sm:p-0.5 border border-gray-400 rounded-md hover:border-gray-500"
         target="_blank"
       >
-        <img src="/x.svg" alt="x-icon" class="size-4" />
+        <img src="/x.svg" alt="x-icon" class="size-5 sm:size-4" />
       </a>
     </div>
   </div>
   <div class="flex items-center gap-1">
-    <Pin size="14" />
-    <a class="hover:underline" href="https://www.google.com/maps/place/Tallinn/" target="_blank"
+    <Pin size="16" class="sm:size-4 shrink-0" />
+    <a class="hover:underline py-2 sm:py-0 -my-2 sm:my-0" href="https://www.google.com/maps/place/Tallinn/" target="_blank"
       >{data.contact.location}</a
     >
   </div>

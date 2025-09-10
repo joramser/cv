@@ -11,8 +11,8 @@ import SectionTitle from "@web/components/ui/section-title.astro";
   <SectionBody>
     {
       Object.entries(data.skills).map(([category, skills]) => (
-        <div class="flex gap-4">
-          <h3 class="w-22 shrink-0 font-mono font-bold text-gray-700">{category}</h3>
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+          <h3 class="sm:w-22 sm:shrink-0 font-mono font-bold text-gray-700 mb-1 sm:mb-0">{category}</h3>
           <div class="flex gap-2 flex-wrap">
             {skills.map((skill) => (
               <Badge>{skill}</Badge>

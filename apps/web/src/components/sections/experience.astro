@@ -11,8 +11,8 @@ import SectionTitle from "@web/components/ui/section-title.astro";
     {
       data.experience.map((item) => (
         <div>
-          <div class="font-mono flex justify-between">
-            <div>
+          <div class="font-mono flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
+            <div class="flex-1">
               <a
                 href={item.website}
                 target="_blank"
@@ -23,7 +23,7 @@ import SectionTitle from "@web/components/ui/section-title.astro";
               </a>
               <p class="font-bold text-md text-gray-700">{item.title}</p>
             </div>
-            <p class="text-gray-700">
+            <p class="text-gray-700 sm:shrink-0 text-sm sm:text-base">
               {item.startYear} - {item.endYear ?? "Present"}
             </p>
           </div>

@@ -6,6 +6,6 @@ export interface Props {
 const { class: className, ...props } = Astro.props;
 ---
 
-<section class:list={["flex flex-col gap-4", className]} {...props}>
+<section class:list={["flex flex-col gap-3 sm:gap-4", className]} {...props}>
   <slot />
 </section>
