@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap")
-layer(base);
+  layer(base);
 
 @import "tailwindcss";
 
@@ -13,9 +13,5 @@ layer(base);
   html {
     font-size: clamp(14px, 2.5vw, 16px);
     overscroll-behavior: none;
-  }
-
-  body {
-    line-height: 1.6;
   }
 }
