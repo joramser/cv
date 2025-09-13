@@ -13,7 +13,7 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
       <AtSign size="16" class="shrink-0" />
       <span class="break-all sm:break-normal">{data.handle}</span>
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 print:hidden">
       <a
         href={data.contact.website}
         class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
