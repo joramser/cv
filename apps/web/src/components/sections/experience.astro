@@ -1,5 +1,5 @@
 ---
-import { data } from "@cv/data";
+import { webData } from "@cv/data/web";
 import Section from "@web/components/ui/section.astro";
 import SectionBody from "@web/components/ui/section-body.astro";
 import SectionTitle from "@web/components/ui/section-title.astro";
@@ -9,7 +9,7 @@ import SectionTitle from "@web/components/ui/section-title.astro";
   <SectionTitle href="#experience">Experience</SectionTitle>
   <SectionBody>
     {
-      data.experience.map((item) => (
+      webData.experience.map((item) => (
         <div>
           <div class="flex flex-col gap-1 font-mono sm:flex-row sm:items-start sm:justify-between sm:gap-4">
             <div class="flex-1">
@@ -27,7 +27,16 @@ import SectionTitle from "@web/components/ui/section-title.astro";
               {item.startYear} - {item.endYear ?? "Present"}
             </p>
           </div>
-          <p class="mt-2 whitespace-break-spaces text-gray-700 text-sm">{item.description}</p>
+          {item.highlights && (
+            <ul class="mt-2 text-sm text-gray-700 space-y-1">
+              {item.highlights.map((highlight) => (
+                <li class="flex items-start">
+                  <span class="text-gray-400 mr-2">•</span>
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       ))
     }

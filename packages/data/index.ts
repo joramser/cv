@@ -3,14 +3,15 @@ export const data = {
   handle: "joramser",
   title: "Senior Software Engineer transforming ideas into reality",
   intro:
-    "I'm a software engineer and lifelong code enthusiast with over a decade of experience turning ideas into reliable, scalable systems. I hold a BS in Systems/Informatics Engineering and have worked across the full stack—starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
-    "I love crafting both front-end and back-end solutions, and I'm passionate about clean, maintainable architecture. Over the years, I've collaborated with teams of all shapes and sizes, both on-site and remote, and I thrive in environments where learning and improvement never stop. My goal is always to build software that lasts and grows gracefully.",
-  shortIntro:
+    "I'm a software engineer and lifelong programming enthusiast with over a decade of experience turning ideas into scalable and maintainable systems from front to back. I have worked across the full stack, starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
+    "My recent focus has been working on developer-facing tools and integrations, but I enjoy working on any domain where there is an interesting challenge to tackle. " +
+    "I love collaboration and I thrive in tight-knit teams focusing on solving problems for end-users.",
+  friendlyIntro:
     "Hey there! I am `Jorge`! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
     "My recent focus has been working on developer-facing tools and integrations but I enjoy working on any domain where there is a cool challenge to tackle!\n\n" +
     "I love collaboration and I thrive in tight-knit teams focusing on solving problems for end-users.\n\n" +
     "Besides programming my other interests are music, guitar, cooking, coffee and enjoying time with my family.\n\n" +
-    "`TLDR; I enjoying building, collaborating and make things happen!`",
+    "`TLDR; I enjoy building, collaborating and making things happen!`",
   experience: [
     {
       title: "Senior Software Engineer",

@@ -37,7 +37,7 @@ export const Intro = () => {
         <Text color="green">{data.title}</Text>
         <Text color="cyan">📍{data.contact.location}</Text>
         <Newline />
-        <Markdown>{data.shortIntro}</Markdown>
+        <Markdown>{data.friendlyIntro}</Markdown>
       </Box>
       <Box alignSelf="flex-end">
         <Text>
