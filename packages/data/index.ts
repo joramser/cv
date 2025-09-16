@@ -21,15 +21,13 @@ export const data = {
       startYear: "2023",
       endYear: "2025",
       location: "Tallinn, Estonia",
-      description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. I helped to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.
-
-Key responsibilities in my role included:
-
-- Building new features and improving our Avatar SDK for web, as well as enhancing the developer back office for easier integration.
-- Maintaining and creating new features in our public API for developers.
-- Developing a monetization storefront to help companies sell and manage their in-game assets.
-- Contributing to the launch of the Ready Player Me gaming platform experiment.
-- Implementing and launching PlayerZero, an avatar collectible platform, and continuously adding social features and a rewards system to drive user engagement.`,
+      description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. I helped to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.`,
+      highlights: [
+        "Developed a monetization storefront enabling companies to sell and manage their in-game avatar assets, implementing inventory management and webhook events.",
+        "Helped launch PlayerZero avatar collectible platform from concept to production, implementing social features including user profiles, avatar galleries, and a rewards system that increased user engagement and retention.",
+        "Contributed to the design and launch of Ready Player Me's experimental gaming platform, working with cross-functional teams to validate new product concepts through rapid MVP development.",
+        "Added new features in our public API for developers like improved documentation and new endpoints for avatar customization.",
+      ],
       tools: [
         "Typescript",
         "React",
@@ -53,15 +51,14 @@ Key responsibilities in my role included:
       startYear: "2019",
       endYear: "2023",
       location: "Tallinn, Estonia",
-      description: `I was part of the End-User Platform team, responsible for capturing photos and videos, providing real-time feedback to users, and integrating with client web flows via our SDK.
-
-My role involved:
-
-- Migrating the legacy web app and backend originally built with Aurelia and older Node.js code, to a modern stack using React and TypeScript on the front end and a new TypeScript-based backend.
-- Building and improving communication between our data-gathering layer (images, audio, video) and our AI processing layer.
-- Enhancing the end-user flow by introducing innovative features to improve usability, boost conversion rates, and help the product stand out from the competition.
-- Port relevant features to our public API to allow clients to build their own flows.
-- Making architectural decisions and driving improvements across the stack to ensure high availability and scalability.`,
+      description: `I was part of the End-User Platform team, responsible for capturing photos and videos, providing real-time feedback to users, and integrating with client web flows via our SDK.`,
+      highlights: [
+        "Built a myriad of features for the end-user's IDV SDK, including continuous verification flow, mobile handover, barcode extraction, proof of address verification and more, which drove improvements in E2E conversion.",
+        "Collaborated with our AI/ML teams to integrate new models and build new capabilities like real-time capture feedback, document and liveness detection, and more. All with a focus on reliability and performance.",
+        "Ported key end-user features to our public API, enabling clients to build custom verification flows on top of our backend.",
+        "Led a full rewrite of our IDV platform from a legacy Aurelia frontend and older Node.js backend to modern React/TypeScript stack, improving development velocity and code maintainability across the entire end-user platform.",
+        "Implemented quality-of-life improvements for the team like creating our i18n infrastructure, creating a reusable backend SDK and improving our analytics pipeline.",
+      ],
       tools: [
         "Typescript",
         "React",
@@ -88,9 +85,13 @@ My role involved:
       startYear: "2017",
       endYear: "2019",
       location: "Tallinn, Estonia",
-      description: `My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance.
-      
-Over time, my focus shifted toward internal architecture and core system improvements, including the implementation of an event-based architecture and breaking down the original monolith into microservices.`,
+      description: `My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance.`,
+      highlights: [
+        "Built new core features for Jobbatical's platform like candidate pre-screening and more comprehensive CV data gathering to improve both recruiter and candidate experiences.",
+        "Participated in site redesign initiative, collaborating with design and product teams to improve both talent acquisition and client hiring experiences through enhanced UI and UX.",
+        "Implemented event-based architecture and broke down the original monolithic application into microservices, improving system reliability, deployability, and enabling independent team development workflows.",
+        "Helped the company transition to Kubernetes and Docker by containerizing services and setting up CI/CD pipelines with CircleCI.",
+      ],
       tools: [
         "React",
         "Redux",
@@ -114,9 +115,13 @@ Over time, my focus shifted toward internal architecture and core system improve
       startYear: "2016",
       endYear: "2017",
       location: "Cartagena, Colombia",
-      description: `I was promoted to Technical Lead, overseeing a small team responsible for developing new products for the company. I led work on two key projects: EverCheck Wallet and EverCheck Education. Both designed to integrate with the main EverCheck HR suite.
-
-In this role, I continued implementing microservices (e.g., storage, authentication, data) and was actively involved in making and executing design and architecture decisions critical to the success and scalability of these products.`,
+      description: `I was promoted to Technical Lead, overseeing a small team responsible for developing new products for the company. I led work on two key projects: EverCheck Wallet and EverCheck Education. Both designed to integrate with the main EverCheck HR suite.`,
+      highlights: [
+        "Led a cross-functional team of 3 developers in designing and building EverCheck Wallet and Education products from concept to execution, managing project timelines, technical requirements, and stakeholder communication.",
+        "Implemented microservices including secure storage services, OAuth-based authentication systems, and a new caregiver data processing pipeline using Node.js and AWS.",
+        "Helped the company transition from .NET stack to a Node and React stack by being the first adopting team and sharing knowledge across teams.",
+        "Mentored junior developers and gave internal talks on JavaScript's basics and best practices to improve team knowledge and code quality.",
+      ],
       tools: [
         "Node.js",
         "React",
@@ -140,9 +145,13 @@ In this role, I continued implementing microservices (e.g., storage, authenticat
       startYear: "2013",
       endYear: "2016",
       location: "Cartagena, Colombia",
-      description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform: such as migrating from a monolithic web service to a microservices-based architecture, which helped the product scale to support 5x its original user base.
-      
-I also contributed to major UI improvements, including a full product redesign and the development of a custom React component library.`,
+      description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform.`,
+      highlights: [
+        "Implemented various new features including new compliance data sources besides state licenses, employee attachments, integration with third-party HR platforms, and more.",
+        "Contributed to a full redesign and rearchitecture of the main EverCheck web application using modern SASS, Knockout.js and a custom server hydration framework.",
+        "Led a complete app migration from a legacy Oracle 10 database to a normalized schema in Oracle 12, improving data integrity and query performance.",
+        "Expanded the coverage of our license verification tool by automating data extraction via web scraping.",
+      ],
       tools: [
         "Node.js",
         "React",
@@ -165,9 +174,11 @@ I also contributed to major UI improvements, including a full product redesign a
       startYear: "2012",
       endYear: "2013",
       location: "Cartagena, Colombia",
-      description: `I worked as a software developer intern later promoted to Junior software developer.
-
-At first, I was dedicated to migrating a legacy desktop application to a web application created in ASP.NET and SQL Server. Later I was added to the team in charge of creating new products for the company. Worked with HTML, CSS3, JQuery, Bootstrap and ASP.NET MVC.`,
+      description: `I worked as a software developer intern later promoted to Junior software developer.`,
+      highlights: [
+        "Developed new hospitality software products like a web-based POS system to be used in restaurants and bars.",
+        "Helped migrate complex legacy desktop hospitality management application to a web-based platform using ASP.NET MVC, Bootstrap, jQuery and SQL Server.",
+      ],
     },
   ],
 

@@ -42,8 +42,21 @@ export const ExperienceDetail = () => {
         </Text>
         <Text dimColor>{experience.companySummary}</Text>
         {!isDisplayingTools && (
-          <Box marginTop={1}>
+          <Box marginTop={1} flexDirection="column">
             <Text>{experience.description}</Text>
+            {experience.highlights.length > 0 && (
+              <Box marginTop={1} flexDirection="column">
+                <Text dimColor>Key Highlights:</Text>
+                {experience.highlights.map((highlight) => (
+                  <Box key={highlight}>
+                    <Box width={2} flexShrink={0}>
+                      <Text>•</Text>
+                    </Box>
+                    <Text>{highlight}</Text>
+                  </Box>
+                ))}
+              </Box>
+            )}
           </Box>
         )}
         <Outlet />

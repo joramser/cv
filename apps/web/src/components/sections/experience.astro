@@ -1,5 +1,5 @@
 ---
-import { webData } from "@cv/data/web";
+import { data } from "@cv/data";
 import Section from "@web/components/ui/section.astro";
 import SectionBody from "@web/components/ui/section-body.astro";
 import SectionTitle from "@web/components/ui/section-title.astro";
@@ -9,7 +9,7 @@ import SectionTitle from "@web/components/ui/section-title.astro";
   <SectionTitle href="#experience">Experience</SectionTitle>
   <SectionBody>
     {
-      webData.experience.map((item) => (
+      data.experience.map((item) => (
         <div>
           <div class="flex flex-col gap-1 font-mono sm:flex-row sm:items-start sm:justify-between sm:gap-4">
             <div class="flex-1">
