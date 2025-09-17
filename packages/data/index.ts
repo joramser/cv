@@ -184,7 +184,7 @@ export const data = {
 
   projects: [
     {
-      name: "Tallin Transport Raycast Extension",
+      name: "Tallinn Transport Raycast Extension",
       description: "Raycast extension to get public transport info for Tallinn, Estonia",
       tech: ["TypeScript", "React", "Raycast API"],
       url: "https://www.raycast.com/joramser/tallinn-transport",
