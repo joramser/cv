@@ -5,7 +5,7 @@ import { Experience } from "@tui/routes/experience";
 import { ExperienceDetail } from "@tui/routes/experience/experience-detail";
 import { ExperienceDetailTools } from "@tui/routes/experience/experience-tools";
 import { Intro } from "@tui/routes/intro";
-// import { Projects } from "@tui/routes/projects";
+import { Projects } from "@tui/routes/projects";
 import { Skills } from "@tui/routes/skills";
 import { Splash } from "@tui/routes/splash";
 import { render } from "ink";
@@ -25,7 +25,7 @@ render(
             <Route path="tools" element={<ExperienceDetailTools />} />
           </Route>
         </Route>
-        {/* <Route path="/projects" element={<Projects />} /> */}
+        <Route path="/projects" element={<Projects />} />
         <Route path="skills" element={<Skills />} />
         <Route path="contact" element={<Contact />} />
       </Route>

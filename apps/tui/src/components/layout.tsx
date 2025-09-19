@@ -6,7 +6,7 @@ import { Outlet, useLocation, useNavigate } from "react-router";
 const routes = [
   { route: "/", label: "Intro", icon: "👋" },
   { route: "/experience", label: "Experience", icon: "💼" },
-  // { route: "/projects", label: "Projects", icon: "🚀" },
+  { route: "/projects", label: "Projects", icon: "🚀" },
   { route: "/skills", label: "Skills", icon: "💻" },
   { route: "/contact", label: "Contact", icon: "📧" },
 ] as const;
