@@ -4,11 +4,11 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
 ---
 
 <header class="flex flex-col gap-1">
-  <h1 class="font-mono text-2xl font-bold">
+  <h1 class="text-title font-mono text-2xl font-bold">
     {data.name}
   </h1>
-  <p class="text-gray-700">{data.title}</p>
-  <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+  <p>{data.title}</p>
+  <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
     <div class="flex items-center gap-1 font-mono leading-none">
       <AtSign size="16" class="shrink-0" />
       <span class="break-all sm:break-normal">{data.handle}</span>
@@ -44,7 +44,7 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
       </a>
     </div>
   </div>
-  <div class="flex items-center gap-1">
+  <div class="text-title flex items-center gap-1">
     <Pin size="16" class="shrink-0 sm:size-4" />
     <a
       class="-my-2 py-2 hover:underline sm:my-0 sm:py-0"

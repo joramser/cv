@@ -19,19 +19,19 @@ import SectionTitle from "@web/components/ui/section-title.astro";
                 rel="noopener noreferrer"
                 class="hover:underline"
               >
-                <h3 class="text-lg font-bold">{item.company}</h3>
+                <h3 class="text-title text-lg font-bold">{item.company}</h3>
               </a>
-              <p class="text-md font-bold text-gray-700">{item.title}</p>
+              <p class="text-md font-bold">{item.title}</p>
             </div>
-            <p class="text-sm text-gray-700 sm:shrink-0 sm:text-base">
+            <p class="text-sm sm:shrink-0 sm:text-base">
               {item.startYear} - {item.endYear ?? "Present"}
             </p>
           </div>
           {item.highlights && (
-            <ul class="mt-2 text-sm text-gray-700 space-y-1">
+            <ul class="mt-2 space-y-1 text-sm">
               {item.highlights.map((highlight) => (
                 <li class="flex items-start">
-                  <span class="text-gray-400 mr-2">•</span>
+                  <span class="text-muted mr-2">•</span>
                   <span>{highlight}</span>
                 </li>
               ))}
