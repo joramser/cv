@@ -8,11 +8,11 @@ import SectionTitle from "@web/components/ui/section-title.astro";
 
 <Section>
   <SectionTitle href="#projects">Projects</SectionTitle>
-  <SectionBody>
+  <>
     {
       data.projects.map((project) => (
-        <div>
-          <div class="flex items-center gap-4">
+        <>
+          <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
             <a href={project.url} target="_blank" rel="noopener noreferrer" class="hover:underline">
               <h3 class="text-title font-mono font-bold">{project.name}</h3>
             </a>
@@ -22,9 +22,9 @@ import SectionTitle from "@web/components/ui/section-title.astro";
               ))}
             </div>
           </div>
-          <p class="mt-2 text-sm whitespace-break-spaces">{project.description}</p>
-        </div>
+          <p class="text-sm whitespace-break-spaces">{project.description}</p>
+        </>
       ))
     }
-  </SectionBody>
+  </>
 </Section>
