@@ -9,6 +9,7 @@ import XSign from "../../../public/x.svg";
     {data.name}
   </h1>
   <p>{data.title}</p>
+  <div class="flex flex-col-reverse gap-1 md:flex-col">
   <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
     <div class="flex items-center gap-1 font-mono leading-none">
       <AtSign size="16" class="shrink-0" />
@@ -52,5 +53,6 @@ import XSign from "../../../public/x.svg";
       href="https://www.google.com/maps/place/Tallinn/"
       target="_blank">{data.contact.location}</a
     >
+  </div>
   </div>
 </header>
