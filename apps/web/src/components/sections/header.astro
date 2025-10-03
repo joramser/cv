@@ -10,49 +10,49 @@ import XSign from "../../../public/x.svg";
   </h1>
   <p>{data.title}</p>
   <div class="flex flex-col-reverse gap-1 md:flex-col">
-  <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-    <div class="flex items-center gap-1 font-mono leading-none">
-      <AtSign size="16" class="shrink-0" />
-      <span class="break-all sm:break-normal">{data.handle}</span>
+    <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+      <div class="flex items-center gap-1 font-mono leading-none">
+        <AtSign size="16" class="shrink-0" />
+        <span class="break-all sm:break-normal">{data.handle}</span>
+      </div>
+      <div class="flex items-center gap-2 print:hidden">
+        <a
+          href={data.contact.website}
+          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+          target="_blank"
+        >
+          <Globe size="16" class="sm:size-4" />
+        </a>
+        <a
+          href={data.contact.github}
+          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+          target="_blank"
+        >
+          <Github size="16" class="sm:size-4" />
+        </a>
+        <a
+          href={data.contact.linkedin}
+          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+          target="_blank"
+        >
+          <Linkedin size="16" class="sm:size-4" />
+        </a>
+        <a
+          href={data.contact.twitter}
+          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+          target="_blank"
+        >
+          <XSign class="size-5 sm:size-4" />
+        </a>
+      </div>
     </div>
-    <div class="flex items-center gap-2 print:hidden">
+    <div class="text-title flex items-center gap-1">
+      <Pin size="16" class="shrink-0 sm:size-4" />
       <a
-        href={data.contact.website}
-        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-        target="_blank"
+        class="-my-2 py-2 hover:underline sm:my-0 sm:py-0"
+        href="https://www.google.com/maps/place/Tallinn/"
+        target="_blank">{data.contact.location}</a
       >
-        <Globe size="16" class="sm:size-4" />
-      </a>
-      <a
-        href={data.contact.github}
-        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-        target="_blank"
-      >
-        <Github size="16" class="sm:size-4" />
-      </a>
-      <a
-        href={data.contact.linkedin}
-        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-        target="_blank"
-      >
-        <Linkedin size="16" class="sm:size-4" />
-      </a>
-      <a
-        href={data.contact.twitter}
-        class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-        target="_blank"
-      >
-        <XSign class="size-5 sm:size-4" />
-      </a>
     </div>
-  </div>
-  <div class="text-title flex items-center gap-1">
-    <Pin size="16" class="shrink-0 sm:size-4" />
-    <a
-      class="-my-2 py-2 hover:underline sm:my-0 sm:py-0"
-      href="https://www.google.com/maps/place/Tallinn/"
-      target="_blank">{data.contact.location}</a
-    >
-  </div>
   </div>
 </header>

@@ -1,5 +1,6 @@
 ---
 import { data } from "@cv/data";
+import { ExternalLinkIcon } from "@lucide/astro";
 import Section from "@web/components/ui/section.astro";
 import SectionBody from "@web/components/ui/section-body.astro";
 import SectionTitle from "@web/components/ui/section-title.astro";
@@ -17,9 +18,10 @@ import SectionTitle from "@web/components/ui/section-title.astro";
                 href={item.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:underline"
+                class="flex items-center gap-1 hover:underline"
               >
                 <h3 class="text-title text-lg font-bold">{item.company}</h3>
+                {item.website && <ExternalLinkIcon class="print:hidden" size="14" />}
               </a>
               <p class="text-md font-bold">{item.title}</p>
             </div>
