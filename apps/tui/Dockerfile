@@ -29,7 +29,7 @@ COPY apps/tui ./apps/tui
 COPY turbo.json package.json bun.lock ./
 
 # Build standalone binary
-RUN cd apps/tui && bun build --compile --minify --target=bun-linux-x64 ./src/main.tsx --outfile cv
+RUN cd apps/tui && bun build --compile --minify --target=bun-linux-x64 --external react-devtools-core ./src/main.tsx --outfile cv
 
 # Production stage - use minimal alpine image
 FROM alpine:latest AS runner
