@@ -4,46 +4,48 @@ import { AtSign, Github, Globe, Linkedin, Pin } from "@lucide/astro";
 import XSign from "../../../public/x.svg";
 ---
 
-<header class="flex flex-col gap-1">
-  <h1 class="text-title font-mono text-2xl font-bold">
-    {data.name}
-  </h1>
-  <p>{data.title}</p>
-  <div class="flex flex-col-reverse gap-1 md:flex-col">
-    <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-      <div class="flex items-center gap-1 font-mono leading-none">
-        <AtSign size="16" class="shrink-0" />
-        <span class="break-all sm:break-normal">{data.handle}</span>
-      </div>
-      <div class="flex items-center gap-2 print:hidden">
-        <a
-          href={data.contact.website}
-          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-          target="_blank"
-        >
-          <Globe size="16" class="sm:size-4" />
-        </a>
-        <a
-          href={data.contact.github}
-          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-          target="_blank"
-        >
-          <Github size="16" class="sm:size-4" />
-        </a>
-        <a
-          href={data.contact.linkedin}
-          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-          target="_blank"
-        >
-          <Linkedin size="16" class="sm:size-4" />
-        </a>
-        <a
-          href={data.contact.twitter}
-          class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
-          target="_blank"
-        >
-          <XSign class="size-5 sm:size-4" />
-        </a>
+<header class="flex justify-between gap-2">
+  <div class="flex flex-col gap-1">
+    <h1 class="text-title font-mono text-2xl font-bold">
+      {data.name}
+    </h1>
+    <p>{data.title}</p>
+    <div class="flex flex-col-reverse gap-1 md:flex-col">
+      <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+        <div class="flex items-center gap-1 font-mono leading-none">
+          <AtSign size="16" class="shrink-0" />
+          <span class="break-all sm:break-normal">{data.handle}</span>
+        </div>
+        <div class="flex items-center gap-2 print:hidden">
+          <a
+            href={data.contact.website}
+            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            target="_blank"
+          >
+            <Globe size="16" class="sm:size-4" />
+          </a>
+          <a
+            href={data.contact.github}
+            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            target="_blank"
+          >
+            <Github size="16" class="sm:size-4" />
+          </a>
+          <a
+            href={data.contact.linkedin}
+            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            target="_blank"
+          >
+            <Linkedin size="16" class="sm:size-4" />
+          </a>
+          <a
+            href={data.contact.twitter}
+            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            target="_blank"
+          >
+            <XSign class="size-5 sm:size-4" />
+          </a>
+        </div>
       </div>
     </div>
     <div class="text-title flex items-center gap-1">
@@ -54,5 +56,12 @@ import XSign from "../../../public/x.svg";
         target="_blank">{data.contact.location}</a
       >
     </div>
+  </div>
+  <div class="hidden items-center justify-center md:flex">
+    <img
+      src="/avatar.jpeg"
+      alt="Avatar"
+      class="aspect-square size-28 rounded-xl object-cover transition-transform duration-500 hover:scale-105"
+    />
   </div>
 </header>

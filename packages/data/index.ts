@@ -2,6 +2,7 @@ export const data = {
   name: "Jorge Ramírez Serrato",
   handle: "joramser",
   title: "Senior Software Engineer transforming ideas into reality",
+  avatar: "/avatar.jpeg",
   intro:
     "I'm a software engineer and lifelong programming enthusiast with over a decade of experience turning ideas into scalable and maintainable systems from front to back. I have worked across the full stack, starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
     "My recent focus has been working on developer-facing tools and integrations, but I enjoy working on any domain where there is an interesting challenge to tackle. " +
