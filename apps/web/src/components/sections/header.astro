@@ -10,40 +10,54 @@ import XSign from "../../../public/x.svg";
       {data.name}
     </h1>
     <p>{data.title}</p>
-    <div class="flex flex-col-reverse gap-1 md:flex-col">
-      <div class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+    <div class="flex flex-col-reverse gap-1 md:flex-col print:mb-2">
+      <div
+        class="text-title flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4 print:flex-col print:items-baseline"
+      >
         <div class="flex items-center gap-1 font-mono leading-none">
           <AtSign size="16" class="shrink-0" />
           <span class="break-all sm:break-normal">{data.handle}</span>
         </div>
-        <div class="flex items-center gap-2 print:hidden">
+        <div class="flex gap-2 print:flex-col print:gap-1">
           <a
             href={data.contact.website}
-            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            class="flex gap-2 rounded-md border border-gray-400 p-2 align-middle hover:border-gray-500 sm:p-0.5 print:rounded-none print:border-none"
             target="_blank"
           >
             <Globe size="16" class="sm:size-4" />
+            <span class="hidden font-mono text-sm print:block"
+              >{data.contact.website.replace("https://", "")}</span
+            >
           </a>
           <a
             href={data.contact.github}
-            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            class="flex gap-2 rounded-md border border-gray-400 p-2 align-middle hover:border-gray-500 sm:p-0.5 print:rounded-none print:border-none"
             target="_blank"
           >
             <Github size="16" class="sm:size-4" />
+            <span class="hidden font-mono text-sm print:block"
+              >{data.contact.github.replace("https://", "")}</span
+            >
           </a>
           <a
             href={data.contact.linkedin}
-            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            class="flex gap-2 rounded-md border border-gray-400 p-2 align-middle hover:border-gray-500 sm:p-0.5 print:rounded-none print:border-none"
             target="_blank"
           >
             <Linkedin size="16" class="sm:size-4" />
+            <span class="hidden font-mono text-sm print:block"
+              >{data.contact.linkedin.replace("https://", "")}</span
+            >
           </a>
           <a
             href={data.contact.twitter}
-            class="rounded-md border border-gray-400 p-2 hover:border-gray-500 sm:p-0.5"
+            class="flex gap-2 rounded-md border border-gray-400 p-2 align-middle hover:border-gray-500 sm:p-0.5 print:hidden print:rounded-none print:border-none"
             target="_blank"
           >
             <XSign class="size-5 sm:size-4" />
+            <span class="text-mono hidden font-mono print:block"
+              >{data.contact.twitter.replace("https://", "")}</span
+            >
           </a>
         </div>
       </div>
@@ -57,7 +71,7 @@ import XSign from "../../../public/x.svg";
       >
     </div>
   </div>
-  <div class="hidden items-center justify-center md:flex">
+  <div class="hidden items-center justify-center md:flex print:block">
     <img
       src="/avatar.jpeg"
       alt="Avatar"
