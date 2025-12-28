@@ -4,18 +4,17 @@ export const data = {
   title: "Senior Software Engineer transforming ideas into reality",
   avatar: "/avatar.jpeg",
   intro:
-    "I'm a software engineer and lifelong programming enthusiast with over a decade of experience turning ideas into scalable and maintainable systems from front to back. I have worked across the full stack, starting out in .NET and now specializing in modern Node.js and TypeScript.\n\n" +
-    "My recent focus has been working on developer-facing tools and integrations, but I enjoy working on any domain where there is an interesting challenge to tackle. " +
-    "I love collaboration and I thrive in tight-knit teams focusing on solving problems for end-users.",
+    "Senior Software Engineer with 13+ years of experience building scalable, maintainable full-stack systems. Background in .NET, now specializing in Node.js and TypeScript.\n\n" +
+    "Experienced in developing developer-facing tools, APIs, frontend interfaces and integrations in modern, cloud-based product environments. Strong collaborator with a product-focused mindset and ability to leverage AI tooling for faster, higher-quality delivery.",
   friendlyIntro:
-    "Hey there! I am `Jorge`! I'm a software engineer and lifelong programming enthusiast with 10+ years of experience building scalable, maintainable systems from front to back.\n\n" +
+    "Hey there! I am `Jorge`! I'm a software engineer and lifelong programming enthusiast with 13+ years of experience building scalable, maintainable systems from front to back.\n\n" +
     "My recent focus has been working on developer-facing tools and integrations but I enjoy working on any domain where there is a cool challenge to tackle!\n\n" +
     "I love collaboration and I thrive in tight-knit teams focusing on solving problems for end-users.\n\n" +
     "Besides programming my other interests are music, guitar, cooking, coffee and enjoying time with my family.\n\n" +
     "`TLDR; I enjoy building, collaborating and making things happen!`",
   experience: [
     {
-      title: "Senior Software Engineer",
+      title: "Senior Product Engineer",
       company: "Ready Player Me",
       companySummary: "Estonian startup building a cross-game avatar platform",
       website: "https://readyplayer.me",
@@ -24,10 +23,10 @@ export const data = {
       location: "Tallinn, Estonia",
       description: `As a lean startup, the company focused on being scrappy, rapidly building MVPs for various ideas and releasing them to test viability. I helped to create, launch, monitor, scale, and, in some cases, phase out our products and experiments.`,
       highlights: [
-        "Developed a monetization storefront enabling companies to sell and manage their in-game avatar assets, implementing inventory management and webhook events.",
-        "Helped launch PlayerZero avatar collectible platform from concept to production, implementing social features including user profiles, avatar galleries, and a rewards system that increased user engagement and retention.",
-        "Contributed to the design and launch of Ready Player Me's experimental gaming platform, working with cross-functional teams to validate new product concepts through rapid MVP development.",
-        "Added new features in our public API for developers like improved documentation and new endpoints for avatar customization.",
+        "Developed a monetization storefront enabling partners to sell and manage in-game avatar assets, including inventory management and webhook events.",
+        "Launched PlayerZero, an avatar collectibles platform, implementing social features such as user profiles, avatar galleries, and a rewards system to increase engagement and retention.",
+        "Contributed to the design and launch of an experimental gaming platform through rapid MVP development and cross-functional collaboration.",
+        "Built and extended public developer APIs, adding new endpoints and improving documentation to support custom client integrations.",
       ],
       tools: [
         "Typescript",
@@ -54,11 +53,12 @@ export const data = {
       location: "Tallinn, Estonia",
       description: `I was part of the End-User Platform team, responsible for capturing photos and videos, providing real-time feedback to users, and integrating with client web flows via our SDK.`,
       highlights: [
-        "Built a myriad of features for the end-user's IDV SDK, including continuous verification flow, mobile handover, barcode extraction, proof of address verification and more, which drove improvements in E2E conversion.",
-        "Collaborated with our AI/ML teams to integrate new models and build new capabilities like real-time capture feedback, document and liveness detection, and more. All with a focus on reliability and performance.",
-        "Ported key end-user features to our public API, enabling clients to build custom verification flows on top of our backend.",
-        "Led a full rewrite of our IDV platform from a legacy Aurelia frontend and older Node.js backend to modern React/TypeScript stack, improving development velocity and code maintainability across the entire end-user platform.",
-        "Implemented quality-of-life improvements for the team like creating our i18n infrastructure, creating a reusable backend SDK and improving our analytics pipeline.",
+        "Built and owned core end-user verification features, including continuous verification flows, mobile handover, barcode extraction, proof-of-address verification and more,  which drove improvements in E2E conversion.",
+        "Collaborated with AI/ML teams to integrate real-time capture feedback, document detection, and liveness verification, focusing on reliability and performance.",
+        "Led a full rewrite of the end-user ID verification platform from a legacy Aurelia and Node.js stack to modern React and TypeScript, improving maintainability and development velocity.",
+        "Designed and improved data pipelines between client-side capture (image, audio, video) and backend AI processing services.",
+        "Exposed key end-user capabilities through the public API, enabling clients to build custom verification flows.",
+        "Implemented platform improvements such as i18n infrastructure, reusable backend SDKs, and enhanced analytics pipelines.",
       ],
       tools: [
         "Typescript",
@@ -88,10 +88,10 @@ export const data = {
       location: "Tallinn, Estonia",
       description: `My responsibilities ranged from adding new features to the platform and participating in a full site redesign, to improving both talent and client experiences through better UI, UX, and performance.`,
       highlights: [
-        "Built new core features for Jobbatical's platform like candidate pre-screening and more comprehensive CV data gathering to improve both recruiter and candidate experiences.",
-        "Participated in site redesign initiative, collaborating with design and product teams to improve both talent acquisition and client hiring experiences through enhanced UI and UX.",
-        "Implemented event-based architecture and broke down the original monolithic application into microservices, improving system reliability, deployability, and enabling independent team development workflows.",
-        "Helped the company transition to Kubernetes and Docker by containerizing services and setting up CI/CD pipelines with CircleCI.",
+        "Built core product features such as candidate pre-screening and expanded CV data collection, improving both recruiter and candidate experiences.",
+        "Contributed to a full site redesign, working closely with design and product to improve UI, UX, and overall performance.",
+        "Helped evolve the platform architecture by introducing an event-driven design and breaking down a monolithic application into microservices.",
+        "Supported infrastructure modernization by containerizing services and contributing to the transition to Docker, Kubernetes, and CI/CD pipelines.",
       ],
       tools: [
         "React",
@@ -111,17 +111,19 @@ export const data = {
     {
       title: "Technical Lead",
       company: "Evercheck",
-      companySummary: "U.S.-based company focused on healthcare providers license verification",
+      companySummary:
+        "U.S.-based company focused on healthcare providers license verification",
       website: "https://evercheck.com",
       startYear: "2016",
       endYear: "2017",
       location: "Cartagena, Colombia",
       description: `I was promoted to Technical Lead, overseeing a small team responsible for developing new products for the company. I led work on two key projects: EverCheck Wallet and EverCheck Education. Both designed to integrate with the main EverCheck HR suite.`,
       highlights: [
-        "Led a cross-functional team of 3 developers in designing and building EverCheck Wallet and Education products from concept to execution, managing project timelines, technical requirements, and stakeholder communication.",
-        "Implemented microservices including secure storage services, OAuth-based authentication systems, and a new caregiver data processing pipeline using Node.js and AWS.",
-        "Helped the company transition from .NET stack to a Node and React stack by being the first adopting team and sharing knowledge across teams.",
-        "Mentored junior developers and gave internal talks on JavaScript's basics and best practices to improve team knowledge and code quality.",
+        "Grew and led a team of three engineers building two new products integrated with the core HR platform.",
+        "Owned technical architecture and delivery of EverCheck Wallet and EverCheck Education.",
+        "Designed and implemented microservices for authentication, secure storage, and data processing using Node.js and AWS.",
+        "Acted as early adopter of Node.js and React, supporting company-wide transition from .NET.",
+        "Mentored junior developers and delivered internal technical talks.",
       ],
       tools: [
         "Node.js",
@@ -141,17 +143,19 @@ export const data = {
     {
       title: "Full-Stack Engineer",
       company: "Evercheck",
-      companySummary: "U.S.-based company focused on healthcare providers license verification",
+      companySummary:
+        "U.S.-based company focused on healthcare providers license verification",
       website: "https://evercheck.com",
       startYear: "2013",
       endYear: "2016",
       location: "Cartagena, Colombia",
       description: `I began as a mid-senior developer responsible for implementing new features based on client and product owner requirements. Over time, my role expanded to include architectural improvements to the license verification system and web platform.`,
       highlights: [
-        "Implemented various new features including new compliance data sources besides state licenses, employee attachments, integration with third-party HR platforms, and more.",
-        "Contributed to a full redesign and rearchitecture of the main EverCheck web application using modern SASS, Knockout.js and a custom server hydration framework.",
-        "Led a complete app migration from a legacy Oracle 10 database to a normalized schema in Oracle 12, improving data integrity and query performance.",
-        "Expanded the coverage of our license verification tool by automating data extraction via web scraping.",
+        "Implemented new product features including compliance data sources, employee document management, and third-party HR integrations.",
+        "Contributed to a major web application redesign and rearchitecture using modern SASS, Knockout.js and a custom server hydration framework.",
+        "Played a key role in migrating the platform from a monolith to microservices, enabling 5× user growth.",
+        "Led complete database migration from Oracle 10 to Oracle 12, improving data integrity and query performance.",
+        "Automated data extraction through web scraping to expand license verification coverage.",
       ],
       tools: [
         "Node.js",
@@ -177,8 +181,9 @@ export const data = {
       location: "Cartagena, Colombia",
       description: `I worked as a software developer intern later promoted to Junior software developer.`,
       highlights: [
-        "Developed new hospitality software products like a web-based POS system to be used in restaurants and bars.",
-        "Helped migrate complex legacy desktop hospitality management application to a web-based platform using ASP.NET MVC, Bootstrap, jQuery and SQL Server.",
+        "Developed a web-based POS system for the hospitality industry.",
+        "Assisted in migrating a legacy desktop application to a web-based platform.",
+        "Owned end-to-end development of assigned features using ASP.NET MVC, Bootstrap, jQuery, and SQL Server.",
       ],
     },
   ],
@@ -186,7 +191,8 @@ export const data = {
   projects: [
     {
       name: "Tallinn Transport Raycast Extension",
-      description: "Raycast extension to get public transport info for Tallinn, Estonia",
+      description:
+        "Raycast extension to get public transport info for Tallinn, Estonia",
       tech: ["TypeScript", "React", "Raycast API"],
       url: "https://www.raycast.com/joramser/tallinn-transport",
     },
@@ -207,9 +213,25 @@ export const data = {
       "API design",
       "Event-driven architecture",
     ],
-    Languages: ["TypeScript", "JavaScript", "SQL", "C#", "Elixir"],
-    Frontend: ["React", "Next.js", "Web APIs", "WebRTC", "CSS", "Tailwind", "Astro"],
-    Backend: ["Node.js", "Express", "Nest.js", "PostgreSQL", "MongoDB", "Redis", "RabbitMQ"],
+    Languages: ["TypeScript", "JavaScript", "SQL", "C#", "Golang"],
+    Frontend: [
+      "React",
+      "Next.js",
+      "Web APIs",
+      "WebRTC",
+      "CSS",
+      "Tailwind",
+      "Astro",
+    ],
+    Backend: [
+      "Node.js",
+      "Express",
+      "Nest.js",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "RabbitMQ",
+    ],
     DevOps: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform"],
     Other: ["Productivity tools", "Mentoring"],
   },
